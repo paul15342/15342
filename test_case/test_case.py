@@ -148,8 +148,8 @@ class Race_build(unittest.TestCase):
         Num_now = business.business_num(self)
         self.assertEqual(Num_before+1,Num_now)
 
-    def test_modify_team_info():
-        """修改战队信息"""
+    # def test_modify_team_info():
+    #     """修改战队信息"""
 
 
 
