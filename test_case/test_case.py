@@ -9,8 +9,8 @@
 6, 生产报告
 """
 from selenium import webdriver
-from Login import login,race_zone_manager,race,team
-from Business import business
+from Test.Login import login,race_zone_manager,race,team
+from Test.Business import business
 from Ztest_jiekou.modify_team import *
 from Ztest_jiekou.data import *
 import unittest
