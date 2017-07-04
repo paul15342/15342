@@ -13,7 +13,6 @@ pyunit + selenium + jenkins + github
 2. <strong/>数据模块</strong> 加强数据的管理, 使用Excel或者数据库管理用例参数,使用时直接调用。
 
 
-#完善过程....
-2017-07-04
-今天将自动化脚本与持续集成相结合, 在本地搭建jenkins, 使用github托管代码。 可在jenkins中一键运
-行脚本(也可设置运行的时间),后续想加入docker
+##完善过程....
+2017-07-04<br>
+今天将自动化脚本与持续集成相结合, 在本地搭建jenkins, 使用github托管代码。 可在jenkins中一键运行脚本(也可设置运行的时间),后续想加入docker
