@@ -15,7 +15,8 @@ from Business import business
 from Ztest_jiekou.modify_team import *
 from Ztest_jiekou.data import *
 import unittest
-
+import sys
+sys.path.append("E:\Test\Login")
 
 
 class Race_build(unittest.TestCase):
