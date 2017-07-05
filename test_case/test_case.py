@@ -1,7 +1,6 @@
 # coding=utf-8
 """
 赛区编辑自动化测试
-1,2,3,4,5,6
 1, 数据模块
 2, 定位模块
 3，用例模块
@@ -17,6 +16,7 @@ from Ztest_jiekou.data import *
 import unittest
 import sys
 sys.path.append("E:\Test\Login")
+
 
 
 class Race_build(unittest.TestCase):
@@ -61,20 +61,21 @@ class Race_build(unittest.TestCase):
         # except Exception ,e:
         #     print ("%s != %s 用例失败" %(Num1,Num2) )
 
-    def test_edit_zone(self):
-        """编辑赛区"""
-        driver = self.driver
-        login.login_input(self)
-        login.click_race_manager(self)                                                           # 点击赛事管理
-        race_zone_manager.click_race_zone(self)                                                  # 点击赛区编辑
-        race_zone_manager.modify_zone(self)                                                      # 修改赛区名称
-        login.submit(self)                                                                       # 保存
-        driver.refresh()
-        Text = business.business_td_five(self)                                                   # 抓取赛区名称
-        # try:
-        self.assertEqual(Text,u"修改名称")
-        # except Exception ,e:
-        #     print ("抓取到的信息:%s" % Text,  "实际信息:修改名称")
+
+    # def test_edit_zone(self):
+    #     """编辑赛区"""
+    #     driver = self.driver
+    #     login.login_input(self)
+    #     login.click_race_manager(self)                                                           # 点击赛事管理
+    #     race_zone_manager.click_race_zone(self)                                                  # 点击赛区编辑
+    #     race_zone_manager.modify_zone(self)                                                      # 修改赛区名称
+    #     login.submit(self)                                                                       # 保存
+    #     driver.refresh()
+    #     Text = business.business_td_five(self)                                                   # 抓取赛区名称
+    #     # try:
+    #     self.assertEqual(Text,u"修改名称")
+    #     # except Exception ,e:
+    #     #     print ("抓取到的信息:%s" % Text,  "实际信息:修改名称")
 
     def test_build_race(self):
         """新增赛事"""
@@ -150,16 +151,8 @@ class Race_build(unittest.TestCase):
         Num_now = business.business_num(self)
         self.assertEqual(Num_before+1,Num_now)
 
-
-
-
-
-
-
-
-
-
-
+    # def test_modify_team_info():
+    #     """修改战队信息"""
 
 
     def tearDown(self):
